@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="displayfeedcontent" fx:id="displayfeedcontent" prefHeight="472.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayFeed">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="1386.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="6.0" layoutY="4.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@galery/left-arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ChoiceBox id="feeddisplayfiltr1" fx:id="feeddisplayfiltr1" layoutX="781.0" layoutY="96.0" prefHeight="40.0" prefWidth="159.0" />
+            <ChoiceBox id="feeddisplayfiltr2" fx:id="feeddisplayfiltr2" layoutX="781.0" layoutY="145.0" prefHeight="39.0" prefWidth="104.0" />
+            <ChoiceBox id="feeddisplayfiltr3" fx:id="feeddisplayfiltr3" layoutX="781.0" layoutY="204.0" prefHeight="39.0" prefWidth="159.0" />
+         </children>
+      </AnchorPane>
+      <TextField id="fooddisplaytext1" fx:id="feeddisplaytext1" layoutX="948.0" layoutY="91.0" prefHeight="39.0" prefWidth="201.0" />
+      <TextField id="fooddisplaytext2" fx:id="feeddisplaytext2" layoutX="948.0" layoutY="195.0" prefHeight="39.0" prefWidth="201.0" />
+      <Button id="animaldisplaysend" fx:id="feeddisplaysend" layoutX="838.0" layoutY="252.0" mnemonicParsing="false" onAction="#pressFeedFiltrButton" prefHeight="64.0" prefWidth="220.0" style="-fx-border-color: black;" text="Wyszukaj">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView id="tabledisplayanimal" fx:id="tabledisplayfeed" layoutX="5.0" layoutY="47.0" prefHeight="419.0" prefWidth="776.0" />
+      <Text layoutX="906.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtruj" wrappingWidth="96.25637194514275">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="feeddisplayanimal1" layoutX="948.0" layoutY="91.0" prefHeight="40.0" prefWidth="201.0" />
+      <ChoiceBox fx:id="feeddisplayuser1" layoutX="948.0" layoutY="91.0" prefHeight="45.0" prefWidth="201.0" />
+      <ChoiceBox fx:id="feeddisplayfood1" layoutX="948.0" layoutY="91.0" prefHeight="48.0" prefWidth="200.0" />
+      <DatePicker fx:id="feeddisplaydate1" layoutX="941.0" layoutY="87.0" prefHeight="51.0" prefWidth="209.0" />
+      <ChoiceBox fx:id="feeddisplayanimal2" layoutX="948.0" layoutY="193.0" prefHeight="40.0" prefWidth="201.0" />
+      <ChoiceBox fx:id="feeddisplayuser2" layoutX="948.0" layoutY="193.0" prefHeight="45.0" prefWidth="201.0" />
+      <ChoiceBox fx:id="feeddisplayfood2" layoutX="948.0" layoutY="193.0" prefHeight="48.0" prefWidth="200.0" />
+      <DatePicker fx:id="feeddisplaydate2" layoutX="941.0" layoutY="189.0" prefHeight="51.0" prefWidth="209.0" />
+   </children>
+</AnchorPane>

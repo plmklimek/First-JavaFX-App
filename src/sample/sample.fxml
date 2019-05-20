@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="1366.0">
+         <children>
+            <AnchorPane id="header" layoutY="-4.0" prefHeight="92.0" prefWidth="1366.0" style="-fx-background-color: #60B43C;">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="74.0" layoutX="28.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@galery/bird.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="153.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ogród zoologiczny" wrappingWidth="651.5000047087669">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="navbar" fx:id="navbar" layoutY="77.0" prefHeight="110.0" prefWidth="1366.0" style="-fx-background-color: #8FC33A;">
+               <children>
+                  <AnchorPane id="home_btn" fx:id="home_btn" onMouseClicked="#pressButton" prefHeight="111.0" prefWidth="195.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane id="tryclick" fx:id="tryclick" onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="110.0" prefWidth="195.0">
+                           <children>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="56.0" fitWidth="62.0" layoutX="70.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/home.png" />
+                                 </image>
+                              </ImageView>
+                              <Text accessibleRole="NODE" disable="true" layoutX="26.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER" wrappingWidth="144.00002673268318">
+                                 <font>
+                                    <Font name="System Bold" size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="user_btn" fx:id="user_btn" layoutX="195.0" onMouseClicked="#pressButton" prefHeight="104.0" prefWidth="195.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane layoutY="-1.0" onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="111.0" prefWidth="195.0">
+                           <children>
+                              <Text accessibleRole="NODE" disable="true" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj użytkownikami" textAlignment="CENTER" wrappingWidth="194.99999421834946">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="53.0" fitWidth="48.0" layoutX="74.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/user.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="animal_btn" fx:id="animal_btn" layoutX="389.0" onMouseClicked="#pressButton" prefHeight="109.0" prefWidth="196.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="108.0" prefWidth="196.0">
+                           <children>
+                              <Text accessibleRole="NODE" disable="true" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj zwierzętami" textAlignment="CENTER" wrappingWidth="195.00001457333565">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="49.0" fitWidth="49.0" layoutX="73.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/animal.png.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="food_btn" fx:id="food_btn" layoutX="584.0" onMouseClicked="#pressButton" prefHeight="109.0" prefWidth="195.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="109.0" prefWidth="200.0">
+                           <children>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="56.0" fitWidth="61.0" layoutX="72.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/steak.png" />
+                                 </image>
+                              </ImageView>
+                              <Text accessibleRole="NODE" disable="true" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj pokarmem" textAlignment="CENTER" wrappingWidth="200.00000320374966">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="feed_btn" fx:id="feed_btn" layoutX="779.0" onMouseClicked="#pressButton" prefHeight="109.0" prefWidth="195.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane id="tryclick" fx:id="tryclick4" onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="110.0" prefWidth="196.0">
+                           <children>
+                              <Text accessibleRole="NODE" disable="true" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj karmieniem" textAlignment="CENTER" wrappingWidth="195.99999397993088">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="61.0" fitWidth="62.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/feed.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="catwalks_btn" fx:id="catwalks_btn" layoutX="974.0" onMouseClicked="#pressButton" prefHeight="112.0" prefWidth="196.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane layoutY="2.0" onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="109.0" prefWidth="196.0">
+                           <children>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="61.0" fitWidth="62.0" layoutX="68.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/cage.png" />
+                                 </image>
+                              </ImageView>
+                              <Text accessibleRole="NODE" disable="true" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj wybiegami" textAlignment="CENTER" wrappingWidth="195.99999397993088">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+                  <AnchorPane id="pavilon_btn" fx:id="pavilon_btn" layoutX="1169.0" onMouseClicked="#pressButton" prefHeight="109.0" prefWidth="195.0" style="-fx-background-color: #7BFF24;">
+                     <children>
+                        <AnchorPane id="tryclick" fx:id="tryclick51" layoutY="1.0" onMouseEntered="#hoverbutton" onMouseExited="#hoverbuttone" prefHeight="109.0" prefWidth="195.0">
+                           <children>
+                              <Text accessibleRole="NODE" disable="true" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj pawilonami" textAlignment="CENTER" wrappingWidth="194.99999421834946">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Text>
+                              <ImageView accessibleRole="NODE" disable="true" fitHeight="61.0" fitWidth="62.0" layoutX="67.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@galery/pavilon.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="fullcontent" fx:id="fullcontent" layoutY="186.0" prefHeight="523.0" prefWidth="1366.0">
+               <children>
+                  <AnchorPane id="homecontent" fx:id="homecontent" prefHeight="526.0" prefWidth="1366.0" style="-fx-background-color: #60B43C;">
+                     <children>
+                        <TextArea editable="false" layoutX="81.0" layoutY="26.0" prefHeight="465.0" prefWidth="1274.0" text="Witamy w panelu administracyjnym ogrodu zoologicznego." wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="92.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TextArea>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="addanimalcontent" fx:id="addanimalcontent" prefHeight="465.0" prefWidth="1164.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddAnimal">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="1386.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="15.0" layoutY="-2.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@galery/left-arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField id="addanimalname" fx:id="addanimalname" layoutX="16.0" layoutY="49.0" prefHeight="29.0" prefWidth="195.0" promptText="Nazwa:" />
+      <TextField id="addanimalgroup" fx:id="addanimalgroup" layoutX="15.0" layoutY="127.0" prefHeight="32.0" prefWidth="195.0" promptText="Gromada:" />
+      <ChoiceBox id="addanimalsex" fx:id="addanimalsex" layoutX="129.0" layoutY="86.0" prefHeight="32.0" prefWidth="80.0" />
+      <Text layoutX="15.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Płeć : " wrappingWidth="62.000017404556274">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button id="addanimalbutton" fx:id="addanimalbutton" layoutX="169.0" layoutY="333.0" mnemonicParsing="false" onAction="#pressAddAnimal" prefHeight="80.0" prefWidth="180.0" style="-fx-border-color: black;" text="Dodaj">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text id="addanimaltext" fx:id="addanimaltext" layoutX="311.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Komunikat" wrappingWidth="831.9999895095825">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <DatePicker id="addanimaldate" fx:id="addanimaldate" layoutX="14.0" layoutY="182.0" prefHeight="40.0" prefWidth="196.0" />
+      <Text layoutX="16.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data urodzenia:" wrappingWidth="194.99999421834946">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <ChoiceBox id="addanimalcatwalks" fx:id="addanimalcatwalks" layoutX="14.0" layoutY="263.0" prefHeight="40.0" prefWidth="187.0" />
+      <Text layoutX="14.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybieg:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

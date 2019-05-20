@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="editanimalcontent" fx:id="editcatwalkscontent" prefHeight="520.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateCatWalks">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="1386.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ChoiceBox id="updatecatwalksselect" fx:id="updatecatwalksselect" layoutX="122.0" layoutY="14.0" prefHeight="40.0" prefWidth="358.0" />
+      <TextField id="updatecatwalksname" fx:id="updatecatwalksname" layoutX="365.0" layoutY="88.0" prefHeight="39.0" prefWidth="201.0" />
+      <Button id="updatecatwalksbutton" fx:id="updatecatwalksbutton" layoutX="232.0" layoutY="428.0" mnemonicParsing="false" onAction="#pressUpdateCatWalks" prefHeight="92.0" prefWidth="158.0" style="-fx-border-color: black;" text="Edytuj">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text id="updateusertext" fx:id="updatecatwalkstext" layoutX="594.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="486.0000073798001">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa:" wrappingWidth="103.99997520446777">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Typ:" wrappingWidth="104.00000023841858">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pawilon:" wrappingWidth="110.25638887286186">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ChoiceBox id="updatecatwalkspavilon" fx:id="updatecatwalkspavilon" layoutX="371.0" layoutY="193.0" prefHeight="40.0" prefWidth="195.0" />
+      <TextField id="updatecatwalkstype" fx:id="updatecatwalkstype" layoutX="365.0" layoutY="148.0" prefHeight="39.0" prefWidth="201.0" />
+      <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="36.0" layoutY="11.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@galery/left-arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

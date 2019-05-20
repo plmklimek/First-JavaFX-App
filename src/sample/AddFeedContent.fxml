@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="addfeedcontent" fx:id="addfeedcontent" prefHeight="520.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddFeed">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="1386.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text id="addfoodtext" fx:id="addfeedtext" layoutX="35.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Komunikat" wrappingWidth="661.9999895095825">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text id="addfoodtext" fx:id="addfoodtext11" layoutX="164.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ilosc : " wrappingWidth="148.99998199939728">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text id="addfoodtext" fx:id="addfoodtext111" layoutX="164.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zwierze:" wrappingWidth="148.99998199939728">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text id="addfoodtext" fx:id="addfoodtext1111" layoutX="164.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pracownik:" wrappingWidth="148.99998199939728">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text id="addfoodtext" fx:id="addfoodtext1112" layoutX="164.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pokarm:" wrappingWidth="148.99998199939728">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <TextField fx:id="addfeedilosc" layoutX="313.0" layoutY="66.0" prefHeight="39.0" prefWidth="282.0" />
+            <ChoiceBox fx:id="addfeedanimal" layoutX="313.0" layoutY="111.0" prefHeight="45.0" prefWidth="282.0" />
+            <ChoiceBox fx:id="addfeeduser" layoutX="313.0" layoutY="163.0" prefHeight="45.0" prefWidth="282.0" />
+            <ChoiceBox fx:id="addfeedfood" layoutX="313.0" layoutY="22.0" prefHeight="45.0" prefWidth="282.0" />
+         </children>
+      </AnchorPane>
+      <Button id="addanimalbutton" fx:id="addfeedbutton" layoutX="172.0" layoutY="440.0" mnemonicParsing="false" onAction="#pressAddFeed" prefHeight="80.0" prefWidth="180.0" style="-fx-border-color: black;" text="Dodaj">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="36.0" layoutY="11.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@galery/left-arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

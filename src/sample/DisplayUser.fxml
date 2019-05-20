@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="displayusercontent" fx:id="displayusercontent" prefHeight="430.0" prefWidth="1268.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayUser">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="20.0" layoutY="20.0" prefHeight="556.0" prefWidth="1396.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="34.0" layoutY="26.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@galery/left-arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></AnchorPane>
+      <ChoiceBox id="userdisplayfiltr1" fx:id="userdisplayfiltr1" layoutX="837.0" layoutY="91.0" prefHeight="40.0" prefWidth="167.0" />
+      <ChoiceBox id="userdisplayfiltr2" fx:id="userdisplayfiltr2" layoutX="837.0" layoutY="143.0" prefHeight="39.0" prefWidth="104.0" />
+      <ChoiceBox id="userdisplayfiltr3" fx:id="userdisplayfiltr3" layoutX="837.0" layoutY="195.0" prefHeight="39.0" prefWidth="167.0" />
+      <TextField id="userdisplaytext1" fx:id="userdisplaytext1" layoutX="1017.0" layoutY="94.0" prefHeight="39.0" prefWidth="201.0" />
+      <TextField id="userdisplaytext2" fx:id="userdisplaytext2" layoutX="1014.0" layoutY="195.0" prefHeight="39.0" prefWidth="201.0" />
+      <Button id="userdisplaysend" fx:id="userdisplaysend" layoutX="838.0" layoutY="252.0" mnemonicParsing="false" onAction="#pressUserFiltrButton" prefHeight="64.0" prefWidth="220.0" style="-fx-border-color: black;" text="Wyszukaj">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView id="tabledisplayuser" fx:id="tabledisplayuser" layoutX="89.0" prefHeight="466.0" prefWidth="739.0" />
+      <Text layoutX="906.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtruj" wrappingWidth="96.25637194514275">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <DatePicker id="userdisplaydate1" fx:id="userdisplaydate1" layoutX="1010.0" layoutY="94.0" prefHeight="40.0" prefWidth="209.0" />
+      <DatePicker id="userdisplaydate2" fx:id="userdisplaydate2" layoutX="1013.0" layoutY="195.0" prefHeight="40.0" prefWidth="209.0" />
+      <ChoiceBox fx:id="userdisplaysex1" layoutX="1010.0" layoutY="94.0" prefHeight="40.0" prefWidth="209.0" />
+      <ChoiceBox fx:id="userdisplaysex2" layoutX="1010.0" layoutY="195.0" prefHeight="40.0" prefWidth="209.0" />
+   </children>
+</AnchorPane>

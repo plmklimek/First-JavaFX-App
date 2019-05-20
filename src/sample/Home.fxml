@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="homecontent" fx:id="homecontent" prefHeight="526.0" prefWidth="1366.0" style="-fx-background-color: #60B43C;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea editable="false" layoutX="81.0" layoutY="26.0" prefHeight="465.0" prefWidth="1274.0" text="Witamy w panelu administracyjnym ogrodu zoologicznego." wrapText="true">
+         <font>
+            <Font name="System Bold" size="92.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="deleteusercontent" fx:id="deleteusercontent" prefHeight="520.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DeleteUser">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="20.0" layoutY="20.0" prefHeight="556.0" prefWidth="1396.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ChoiceBox id="deleteuserselect" fx:id="deleteuserselect" layoutX="126.0" layoutY="14.0" prefHeight="31.0" prefWidth="303.0" />
+      <Button layoutX="206.0" layoutY="369.0" mnemonicParsing="false" onAction="#pressDeleteUser" prefHeight="101.0" prefWidth="144.0" style="-fx-border-color: black;" text="Usuń">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField id="deleteusername" fx:id="deleteusername" editable="false" layoutX="328.0" layoutY="65.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <TextField id="deleteusersname" fx:id="deleteusersname" editable="false" layoutX="328.0" layoutY="107.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <Text layoutX="58.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imie:">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko:" wrappingWidth="120.99994331598282">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon:" wrappingWidth="96.2563845217228">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Płeć:" wrappingWidth="120.9999731183052">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pensja:" wrappingWidth="120.9999731183052">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="58.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stanowisko:" wrappingWidth="150.99997174739838">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="57.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data zatrudnienia" wrappingWidth="194.99998080730438">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <DatePicker id="deleteuserdate" fx:id="deleteuserdate" editable="false" layoutX="328.0" layoutY="304.0" prefHeight="31.0" prefWidth="169.0" />
+      <Text id="deleteusertext" fx:id="deleteusertext" layoutX="524.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="704.9857825487852">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <TextField id="deleteuserphone" fx:id="deleteuserphone" editable="false" layoutX="328.0" layoutY="150.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <TextField id="deleteusersex" fx:id="deleteusersex" editable="false" layoutX="328.0" layoutY="192.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <TextField id="deleteusersalary" fx:id="deleteusersalary" editable="false" layoutX="328.0" layoutY="230.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <TextField id="deleteuserposition" fx:id="deleteuserposition" editable="false" layoutX="328.0" layoutY="266.0" prefHeight="31.0" prefWidth="169.0" style="-fx-background-color: #DCDCDC; -fx-border-color: black;" />
+      <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="36.0" layoutY="11.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@galery/left-arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

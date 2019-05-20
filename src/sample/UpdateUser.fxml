@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="editusercontent" fx:id="editusercontent" prefHeight="526.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.UpdateUser">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="20.0" layoutY="20.0" prefHeight="556.0" prefWidth="1396.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ChoiceBox id="updateuserselect" fx:id="updateuserselect" layoutX="122.0" layoutY="14.0" prefHeight="40.0" prefWidth="358.0" />
+      <TextField id="updateusername" fx:id="updateusername" layoutX="368.0" layoutY="137.0" prefHeight="40.0" prefWidth="200.0" />
+      <TextField id="updateusersname" fx:id="updateusersname" layoutX="365.0" layoutY="88.0" prefHeight="39.0" prefWidth="201.0" />
+      <TextField id="updateuserphone" fx:id="updateuserphone" layoutX="369.0" layoutY="235.0" prefHeight="40.0" prefWidth="195.0" />
+      <TextField id="updateusersalary" fx:id="updateusersalary" layoutX="368.0" layoutY="283.0" prefHeight="40.0" prefWidth="195.0" />
+      <TextField id="updateuserposition" fx:id="updateuserposition" layoutX="366.0" layoutY="328.0" prefHeight="39.0" prefWidth="195.0" />
+      <Button id="updateuserbutton" fx:id="updateuserbutton" layoutX="232.0" layoutY="428.0" mnemonicParsing="false" onAction="#pressUpdateUser" prefHeight="92.0" prefWidth="158.0" style="-fx-border-color: black;" text="Edytuj">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ChoiceBox id="updateusersex" fx:id="updateusersex" layoutX="451.0" layoutY="184.0" prefHeight="48.0" prefWidth="121.0" />
+      <DatePicker id="updateuserdate" fx:id="updateuserdate" layoutX="368.0" layoutY="372.0" prefHeight="48.0" prefWidth="195.0" />
+      <Text layoutX="31.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data zatrudnienia:" wrappingWidth="220.00002339482307">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text id="updateusertext" fx:id="updateusertext" layoutX="594.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="486.0000073798001">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imie:" wrappingWidth="78.00000017881393">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko:" wrappingWidth="128.00001019239426">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="płeć:" wrappingWidth="104.00000023841858">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="telefon:" wrappingWidth="104.00000023841858">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pensja:" wrappingWidth="96.25638887286186">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="stanowisko:" wrappingWidth="168.99999023973942">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="36.0" layoutY="11.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@galery/left-arrow.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

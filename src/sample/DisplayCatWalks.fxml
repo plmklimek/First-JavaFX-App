@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="displaycatwalkscontent" fx:id="displaycatwalkscontent" prefHeight="472.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DisplayCatWalks">
+   <children>
+      <AnchorPane id="homecontent" fx:id="homecontent" layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="1386.0" style="-fx-background-color: #60B43C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView id="back" fx:id="back" fitHeight="62.0" fitWidth="49.0" layoutX="4.0" layoutY="16.0" onMouseClicked="#backtomenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@galery/left-arrow.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></AnchorPane>
+      <ChoiceBox id="catwalksdisplayfiltr1" fx:id="catwalksdisplayfiltr1" layoutX="837.0" layoutY="91.0" prefHeight="40.0" prefWidth="104.0" />
+      <ChoiceBox id="catwalksdisplayfiltr2" fx:id="catwalksdisplayfiltr2" layoutX="837.0" layoutY="143.0" prefHeight="39.0" prefWidth="104.0" />
+      <ChoiceBox id="catwalksdisplayfiltr3" fx:id="catwalksdisplayfiltr3" layoutX="837.0" layoutY="195.0" prefHeight="39.0" prefWidth="104.0" />
+      <TextField id="catwalksdisplaytext1" fx:id="catwalksdisplaytext1" layoutX="948.0" layoutY="91.0" prefHeight="39.0" prefWidth="201.0" />
+      <TextField id="catwalksdisplaytext2" fx:id="catwalksdisplaytext2" layoutX="948.0" layoutY="195.0" prefHeight="39.0" prefWidth="201.0" />
+      <Button id="catwalksdisplaysend" fx:id="catwalksdisplaysend" layoutX="838.0" layoutY="252.0" mnemonicParsing="false" onAction="#pressCatWalksFiltrButton" prefHeight="64.0" prefWidth="220.0" style="-fx-border-color: black;" text="Wyszukaj">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TableView id="tabledisplaycatwalks" fx:id="tabledisplaycatwalks" layoutX="47.0" layoutY="60.0" prefHeight="406.0" prefWidth="786.0" />
+      <Text layoutX="906.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filtruj" wrappingWidth="96.25637194514275">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <ChoiceBox id="catwalkschoicepavilon1" fx:id="catwalkschoicepavilon1" layoutX="941.0" layoutY="87.0" prefHeight="51.0" prefWidth="209.0" />
+      <ChoiceBox id="catwalkschoicepavilon2" fx:id="catwalkschoicepavilon2" layoutX="944.0" layoutY="189.0" prefHeight="51.0" prefWidth="209.0" />
+   </children>
+</AnchorPane>
